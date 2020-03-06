@@ -1,0 +1,27 @@
+---
+title: "Non stationary and non mixing"
+author: "Roh"
+date: "2/19/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Example of Non-stationary and Non-mixing
+
+Suppose we flip a fair coin. If head, the stochastic process traces out the sin curve. If tail, the stochastic process traces out the cos curve.
+
+$$Y(t)=\cos \left(t - X\cdot\frac{\pi}{2}\right) $$
+where $P(X=0)=0.5$ and $P(X=1)=0.5$ 
+
+```{r}
+x = rbinom(n = 10000, 1, 0.5)
+mean(x)
+
+for (i in length(x)){
+  
+}
+```
+
